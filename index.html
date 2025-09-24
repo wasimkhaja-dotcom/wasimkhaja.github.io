@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wasim Khaja — Resume</title>
+  <style>
+    :root{
+      --accent:#0b63ff;                
+      --muted:#666;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --max-w:900px;
+      --pad:22px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#ffffff 60%);
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:28px;
+      display:flex;
+      justify-content:center;
+      font-size:15px;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-w);
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(10,20,40,0.07);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 2fr;
+      gap:0;
+    }
+
+    /* Header (spanning both columns) */
+    header{
+      grid-column:1 / -1;
+      padding:var(--pad);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom:1px solid #f0f2f6;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    .name-block{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:0.2px;
+    }
+    .contact{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* Navigation buttons */
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin-top:6px;
+    }
+
+    .button {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      transition: background-color 0.2s;
+    }
+
+    .button:hover {
+      background-color: #094bbd;
+    }
+
+    /* Left column */
+    .sidebar{
+      padding:var(--pad);
+      border-right:1px solid #f0f2f6;
+      background:linear-gradient(0deg, rgba(11,99,255,0.02), transparent);
+      min-height:220px;
+    }
+    .section-title{
+      font-weight:600;
+      font-size:13px;
+      color:var(--accent);
+      margin-bottom:10px;
+      text-transform:uppercase;
+      letter-spacing:0.9px;
+    }
+    .info-block{margin-bottom:18px}
+    ul.skills{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    ul.skills li{
+      background:#f1f6ff;
+      color:var(--accent);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+    }
+
+    /* Right column */
+    main{
+      padding:var(--pad);
+    }
+    .job{
+      margin-bottom:14px;
+    }
+    .job-header{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:baseline;
+      flex-wrap:wrap;
+    }
+    .job-title{
+      font-weight:700;
+    }
+    .job-company{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .job-dates{
+      color:var(--muted);
+      font-size:13px;
+    }
+    .job ul{
+      margin:8px 0 0 18px;
+      padding:0;
+    }
+    .job ul li{
+      margin-bottom:6px;
+      line-height:1.45;
+    }
+
+    .activities{
+      margin-top:12px;
+    }
+
+    /* Responsive */
+    @media (max-width:820px){
+      .container{grid-template-columns:1fr; padding:0}
+      .sidebar{border-right:none;border-bottom:1px solid #f0f2f6}
+      header{padding:18px}
+    }
+
+    /* Print tweaks */
+    @media print{
+      body{background:white}
+      .container{box-shadow:none;border-radius:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Resume — Wasim Khaja">
+    <header>
+      <div class="name-block">
+        <h1>Wasim Khaja</h1>
+        <div class="contact" aria-hidden="false">
+          <span>Email: <a href="mailto:wasimk0604@gmail.com">wasimk0604@gmail.com</a></span> •
+          <span>Phone: <a href="tel:+15863295432">586-329-5432</a></span>
+        </div>
+      </div>
+
+      <div style="text-align:right;">
+        <div style="color:var(--muted); font-size:14px;">
+          Bachelor of Science — Information Technology<br />
+          Oakland University — Expected April 2027
+        </div>
+        <div class="nav-buttons">
+          <a href="index.html" class="button">Home</a>
+          <a href="aboutme.html" class="button">About Me</a>
+          <a href="project2.html" class="button">Project 2</a>
+          <a href="project3.html" class="button">Project 3</a>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="info-block">
+        <div class="section-title">Skills</div>
+        <ul class="skills" aria-label="skills list">
+          <li>Positive attitude</li>
+          <li>Office experience</li>
+          <li>Editing</li>
+          <li>Organizational skills</li>
+          <li>Microsoft Word</li>
+          <li>Sheets & Slides</li>
+          <li>Microsoft Excel</li>
+          <li>Prezi</li>
+          <li>Picsart</li>
+          <li>Windows 10</li>
+          <li>Customer service</li>
+          <li>Spoken Bangla</li>
+        </ul>
+      </div>
+
+      <div class="info-block">
+        <div class="section-title">Education</div>
+        <div>
+          <strong>Oakland University</strong><br />
+          Bachelor of Science — Information Technology<br />
+          <small style="color:var(--muted)">Expected Graduation: April 2027</small>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="section-title">Activities & Achievements</div>
+        <div style="color:var(--muted); line-height:1.45;">
+          Robotics Safety Captain Award<br />
+          High Honor Roll<br />
+          Student of the Month<br />
+          Perfect Attendance<br />
+          CYSP (Concept Young Scholars Program) — Science Fair 2nd place
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section aria-label="Experience">
+        <div class="section-title">Experience</div>
+
+        <article class="job" aria-labelledby="meijer">
+          <div class="job-header">
+            <div>
+              <div id="meijer" class="job-title">Associate — Courtesy Clerk</div>
+              <div class="job-company">Meijer — Madison Heights, MI</div>
+            </div>
+            <div class="job-dates">August 2023 — Present</div>
+          </div>
+          <ul>
+            <li>Collected and organized shopping carts to maintain store safety and accessibility.</li>
+            <li>Assisted customers with bagging, carryouts, and general store support.</li>
+            <li>Maintained the cleanliness of entrances and work areas.</li>
+          </ul>
+        </article>
+
+        <article class="job" aria-labelledby="helpdesk">
+          <div class="job-header">
+            <div>
+              <div id="helpdesk" class="job-title">Help Desk Support — Academic Success Center</div>
+              <div class="job-company">Meadow Brook Rd, Auburn Hills</div>
+            </div>
+            <div class="job-dates">September 2023 — April 2023</div>
+          </div>
+          <ul>
+            <li>Managed front desk operations and responded to phone/email requests.</li>
+            <li>Maintained accurate student records and ensured confidentiality.</li>
+            <li>Assisted students with scheduling, resources, and general inquiries.</li>
+          </ul>
+        </article>
+
+        <article class="job" aria-labelledby="valuefresh">
+          <div class="job-header">
+            <div>
+              <div id="valuefresh" class="job-title">Associate — Produce Department</div>
+              <div class="job-company">Value Fresh — Warren, MI</div>
+            </div>
+            <div class="job-dates">August 2021 — July 2022</div>
+          </div>
+          <ul>
+            <li>Packaged and organized fruits and vegetables.</li>
+            <li>Designed produce department displays to attract customers and increase sales.</li>
+            <li>Ensured fruits and vegetables met company standards.</li>
+          </ul>
+        </article>
+
+        <article class="job" aria-labelledby="bagger">
+          <div class="job-header">
+            <div>
+              <div id="bagger" class="job-title">Associate — Bagger</div>
+              <div class="job-company">Value Fresh — Warren, MI</div>
+            </div>
+            <div class="job-dates">Dates not specified</div>
+          </div>
+          <ul>
+            <li>Bagged, stored, and unloaded customer goods while providing excellent customer service.</li>
+            <li>Returned shopping carts to the entrance for customers to utilize.</li>
+            <li>Managed the bottle return area by replacing bins and providing maintenance to machines as needed.</li>
+          </ul>
+        </article>
+
+        <article class="job" aria-labelledby="walmart">
+          <div class="job-header">
+            <div>
+              <div id="walmart" class="job-title">Associate — Hardware Department</div>
+              <div class="job-company">Walmart — Roseville, MI</div>
+            </div>
+            <div class="job-dates">June 2020 — April 2021</div>
+          </div>
+          <ul>
+            <li>Assisted customers with selecting and mixing paint.</li>
+            <li>Provided suggestions on appropriate hardware items based on their needs.</li>
+            <li>Stocked and organized items to ensure availability for the customers.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section class="activities" aria-label="Other activities">
+        <div class="section-title">Additional Info</div>
+        <p style="color:var(--muted); margin-top:6px; line-height:1.5;">
+          Proficient in spoken Bangla. Strong customer service background with retail and help-desk experience.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
